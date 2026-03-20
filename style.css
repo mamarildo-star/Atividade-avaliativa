@@ -1,0 +1,13 @@
+:root{
+    --vermelho-ceep:#cc0000;
+    --amarelo-ceep: #fcc200;
+    --cinza-claro: #c0c0c0;
+    --branco-ceep: #f0f8ff;
+    --texto: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
