@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*Variaveis de CSS */
+/*Variaáveis de CSS*/
 :root{
-    --vermelho-ceep:#cc0000;
-    --amarelho-ceep:#fcc200;
-    --cinza-claro-ceep:#c0c0c0;
-    --branco-ceep:#f0f8ff;
+    --vermelho-ceep: #cc0000;
+    --amarelo-ceep: #fcc200;
+    --cinza-claro: #c0c0c0;
+    --branco-ceep: #f0f8ff;
     --texto: #333;
 }
 
@@ -17,33 +17,34 @@
 }
 
 body{
-    font-family:"Roboto",Arial, Helvetica, sans-serif;
-    background-color: var(--cinza-claro-ceep);
+    font-family:"Roboto", Arial, Helvetica, sans-serif;
+    background-color: var(--cinza-claro);
     color: var(--texto);
     line-height: 1.6;
 }
 /*Cabeçalho*/
 header{
- background-color:var(--branco-ceep);
- padding: 1rem 5%;
- display: flex;
- justify-content: space-between;
- align-items: center;
- border-bottom: 4px solid var(--vermelho-ceep);
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--branco-ceep);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--vermelho-ceep);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container img{
     height: 60px;
     margin-right: 15px;
 }
-/*Secao hero banner principal, com gradiente*/
+/*Secao hero - banner principal, com gradiente*/
 .hero{
-    background: linear-gradient(135deg, var(--vermelho-ceep) 0%,#003366 100%);
-    color:var(--branco-ceep);
+    background: linear-gradient(135deg, var(--vermelho-ceep) 0%, #003366 100%);
+    color: var(--branco-ceep);
     padding: 4rem 5%;
     text-align: center;
 }
+
 .hero-ilustration{
     font-size: 5rem;
     margin-bottom: 1rem;
@@ -56,9 +57,8 @@ header{
     padding: 3rem 5%;
     flex-wrap: wrap;
     justify-content: center;
-
 }
-/*ESTILIZACAO DOS CARDS*/
+/*ESTILIZAÇÃO DOS CARDS*/
 .card-categoria{
     background: var(--branco-ceep);
     border-radius: 12px;
@@ -68,14 +68,11 @@ header{
     max-width: 500px;
     text-align: center;
     transition: transform 0.3s ease;
-    border-bottom: 8px solid var(--vermelho-ceep);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    
+    boox-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 .card-categoria.subsequente{
-    border-color: var(--amarelho-ceep);
-
-}
+    border-color: var(--amarelo-ceep);
+}  
 .card-categoria:hover{
-    transform: translateY(-10px);
+    transform: translatey(-10px);
 }
