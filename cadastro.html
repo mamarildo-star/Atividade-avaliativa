@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Estudante - Glassmorphism</title>
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+    <div class="background-blobs"></div> <main class="container">
+        <form id="cadastroForm" class="glass-card">
+            <h1>Cadastro de Estudante</h1>
+            
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Modalidade</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="modalidade" value="Integrado" checked> Integrado</label>
+                        <label><input type="radio" name="modalidade" value="Subsequente"> Subsequente</label>
+                    </div>
+                </div>
+            </div>
+
+            <label>Opções de Cursos (Escolha 3)</label>
+            <div class="row courses">
+                <select required>
+                    <option value="">1ª Opção</option>
+                    <option value="informatica">Informática</option>
+                    <option value="mecanica">Mecânica</option>
+                    <option value="eletrotecnica">Eletrotécnica</option>
+                </select>
+                <select required>
+                    <option value="">2ª Opção</option>
+                    <option value="informatica">Informática</option>
+                    <option value="mecanica">Mecânica</option>
+                    <option value="eletrotecnica">Eletrotécnica</option>
+                </select>
+                <select required>
+                    <option value="">3ª Opção</option>
+                    <option value="informatica">Informática</option>
+                    <option value="mecanica">Mecânica</option>
+                    <option value="eletrotecnica">Eletrotécnica</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="tel1">Celular 01</label>
+                    <input type="tel" id="tel1" placeholder="(00) 00000-0000" required>
+                </div>
+                <div class="input-group">
+                    <label for="tel2">Celular 02</label>
+                    <input type="tel" id="tel2" placeholder="(00) 00000-0000">
+                </div>
+            </div>
+
+            <button type="submit" class="btn-save">Salvar Cadastro</button>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Cadastro realizado com sucesso!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
