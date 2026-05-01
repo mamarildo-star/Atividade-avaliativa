@@ -132,7 +132,7 @@ header{
 }
 
 .footer-socials a:hover {
-    background-color: #ffcc00;
+    background-color: var(--amarelo-ceep);
     color: #2c3e50;
 }
 
