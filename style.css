@@ -6,6 +6,7 @@
     --amarelo-ceep: #fcc200;
     --cinza-claro: #c0c0c0;
     --branco-ceep: #f0f8ff;
+    --azul-estado: #004a8d;
     --texto: #333;
 }
 
@@ -49,6 +50,20 @@ header{
     font-size: 5rem;
     margin-bottom: 1rem;
     opacity: 0.9;
+}
+.btn-matricula{
+    background-color: var(--azul-estado);
+    color: var(--branco-ceep);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+.btn-matricula:hover{
+    background-color: #003366;
+    color: #f0f0f0;
 }
 /*CONTAINER DE CATEGORIAS*/
 .container-categorias{
