@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--link para icones do favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="shortcut icon" href="./CEEPlogobrasao-main/logoceep/favicon-16x16.png" type="image/x-icon">
     <!--2º colocar o nome ceep 2026 no navegador-->
+    <link rel="shortcut icon" href="./CEEPlogobrasao-main/logoceep/favicon-16x16.png" type="image/x-icon">
     <title>CEEP 2026</title>
     <!--3°link do css, acrescentar ./-->
     <link rel="stylesheet" href="./style.css">
@@ -25,11 +26,11 @@
     <header>
         <!--inserindo um classe para estilização do logo-->
         <div class="logo-container">
-            <img src="./CEEPlogobrasao-main/brasao/android-chrome-512x512.png" alt="">
+            <img src="./CEEPlogobrasao-main/brasao/android-chrome-512x512.png" alt="Brasão CEEP">
             <strong>CEEP CIANORTE</strong>
         </div>
         <nav>
-           <div class="header-actions">
+            <div class="header-actions">
                 <a href="https://www.areadoaluno.seed.pr.gov.br/servicosaoaluno/pages/publico/login.jsf"
                 target="_blank"
                 class="btn-matricula">Matricule-se PR</a>
@@ -87,7 +88,7 @@
                     I.A e Dados
                 </li>
             </ul>
-            <a href="./integrado.html" class="btn">Ver Cursos</a>
+            <a href="./integrado.html" class="btn" id=" l11">Ver Cursos</a>
         </div>
 
         <div class="card-categoria subsequente">
@@ -142,22 +143,33 @@
             <div class="footer-box">
                 <h3>CEEP Cianorte</h3>
                 <p>R. Dom Pedro II, 1550 - Zona 01</p>
-                <p>Cianorte - PR | (44) 3631-9685</p>
+                <p>Cianorte - PR| (44) 3631-9685</p>
             </div>
-
             <div class="footer-box">
                 <h3>Conecte-se</h3>
                 <div class="footer-socials">
-            <a href = "https://www.instagram.com/ceepcianorte/" target ="_blank">Instagram</a>
-            <a href = "https://wa.me/554436319685" target ="_blank"> WhatsApp</a>
-            <a href = "https://facebook.com/ceepcianorte" target ="_blank"> Facebook</a>
-        </div>                
-    </div>
-</div>
+                    <a href="https://instagram.com/ceep_cianorte" target="_blank">Instagram</a>
+                    <a href="https://wa.me/554436319685" target="_blank">WhatsApp</a>
+                    <a href="https://facebook.com/ceepcianorte" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
         <div class="footer-copy">
-            <p>&copy; 2026 CEEP Cianorte - Todos os direitos reservados.</p>
+            <p>&copy; Centro Estadual de Educação Profissional de Cianorte - 2026</p>
         </div>
     </footer>
+
+    <!--código do VLibras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
 
